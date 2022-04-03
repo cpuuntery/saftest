@@ -18,7 +18,7 @@ Despite being oriented toward testing Android Q/10, This application
 will run on any version of Android after 5.0, when Android added support
 for the Storage Access Framework.
 
-The test walks the entirety of A folder named [speedtest]
+The test walks the entirety of a folder named [speedtest]
 
 The test counts the number of files, number of folders, and total size
 of all files on the Internal Storage. A file manager app would perform a
