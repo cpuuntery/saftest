@@ -12,7 +12,7 @@ import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
-
+import java.io.File
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.coroutines.*
@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity(), CoroutineScope {
 
         fab.isEnabled = false
 
-        val fileTest = FileTest(Environment.getExternalStorageDirectory())
+        val fileTest = FileTest(File("${Environment.getExternalStorageDirectory()}/speedtest/"))
         fileTestView.update(fileTest)
 
         val safTest = SAFTest(this@MainActivity, safUri)
